@@ -1,4 +1,4 @@
-public class Solution {
+public class Multiples {
   public int solution(int number) {
     int sum=0;
     for(int i=number-1;i>=3;i--)
