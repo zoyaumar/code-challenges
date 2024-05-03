@@ -1,4 +1,4 @@
-public class Kata {
+public class HighestAndLowest {
   public static String highAndLow(String numbers) {
     String[] nums = numbers.split(" ");
     int lowest = Integer.MAX_VALUE;
