@@ -10,29 +10,20 @@ public class Conversion {
       return answer;
     }
   
-    //First Second Third values
+    //First, Second, Third values
     public String FST(int n){
       switch(n){
-          case 1:
-            return "F";
-          case 2:
-            return "FF";
-          case 3:
-            return "FFF";
-          case 4:
-            return "FS";
-          case 5:
-            return "S";
-          case 6:
-            return "SF";
-          case 7:
-            return "SFF";
-          case 8:
-            return "SFFF";
-          case 9:
-            return "FT";
+          case 1: return "F";
+          case 2: return "FF";
+          case 3: return "FFF";
+          case 4: return "FS";
+          case 5: return "S";
+          case 6: return "SF";
+          case 7: return "SFF";
+          case 8: return "SFFF";
+          case 9: return "FT";
+          default: return "";
       }
-      return "";
     }
 
     //replace FST with roman numerals
