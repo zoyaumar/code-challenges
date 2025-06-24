@@ -1,4 +1,4 @@
 var lengthOfLastWord = function(s) {
-    let l = s.trim().split(" ")
-    return l[l.length-1].length
+    let arr = s.trim().split(" ")
+    return arr[arr.length-1].length
 };
