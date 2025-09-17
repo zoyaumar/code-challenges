@@ -1,23 +1,21 @@
 class MovingAverage {
     private size: number;
     private nums:number[] = []
-    private sum:number = 0
+    private sum: number = 0
 
     constructor(size: number){
         this.size = size
     }
 
     next(val: number): number {
-        // if(this.nums.length >= this.size)
-        //     this.nums.shift()
-        // this.nums.push(val)
-
-        // this.sum = this.nums.reduce((a:number,b:number) => (b + a), 0)
-        // let average = this.sum/this.nums.length
-        // return average
-
-        //sliding window ->
-        
+        if(this.nums.length >= this.size){
+            const removed = this.nums.shift() || 0
+            this.sum -= removed
+        }
+        this.nums.push(val)
+        this.sum += val
+        let average = this.sum/this.nums.length
+        return average
     }
 }
 
