@@ -8,13 +8,16 @@ class MovingAverage {
     }
 
     next(val: number): number {
-        if(this.nums.length >= this.size)
-            this.nums.shift()
-        this.nums.push(val)
+        // if(this.nums.length >= this.size)
+        //     this.nums.shift()
+        // this.nums.push(val)
 
-        this.sum = this.nums.reduce((a:number,b:number) => (b + a), 0)
-        let average = this.sum/this.nums.length
-        return average
+        // this.sum = this.nums.reduce((a:number,b:number) => (b + a), 0)
+        // let average = this.sum/this.nums.length
+        // return average
+
+        //sliding window ->
+        
     }
 }
 
